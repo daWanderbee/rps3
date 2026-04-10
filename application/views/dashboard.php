@@ -357,14 +357,9 @@ $netPoints = $totalCredit + $totalDebit;
             </div>
             <div class="card-body-custom">
               <?php
-              $redeem = new \App\Models\RedeemModel();
-              // Show rewards user can afford, or if none, show the cheapest ones
-              $affordableRewards = $redeem->getRedeemable($user['points_received'] ?? 0 );
-              if (empty($affordableRewards)) {
-                // If user can't afford anything, show the cheapest rewards available
-                $affordableRewards = $redeem->getCheapestRewards(4); // Get 4 cheapest items
-              }
+              // The controller already provides $featuredRewards
               ?>
+
 
               <?php foreach ($featuredRewards as $reward): ?>
                 <?php

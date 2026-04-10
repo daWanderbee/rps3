@@ -1,35 +1,34 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-$route['default_controller'] = 'Dashboard';
+$route['default_controller'] = 'dashboard';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-$route['leaderboard'] = 'leaderboard/index';
-$route['tasks'] = 'tasks/index';
-$route['transactions'] = 'transactions/index';
-$route['support'] = 'support/index';
+$route['leaderboard'] = 'Leaderboard/index';
+$route['tasks'] = 'Tasks/index';
+$route['transactions'] = 'Transactions/index';
+$route['support'] = 'Support/index';
 
-$route['notifications'] = 'notifications/index';
-$route['notifications/read'] = 'notifications/markRead';
-$route['notifications/read-all'] = 'notifications/markAllRead';
-$route['notifications/discard'] = 'notifications/discard';
-$route['notifications/discard-all'] = 'notifications/discardAll';
+$route['notifications'] = 'Notifications/index';
+$route['notifications/read'] = 'Notifications/markRead';
+$route['notifications/read-all'] = 'Notifications/markAllRead';
+$route['notifications/discard'] = 'Notifications/discard';
+$route['notifications/discard-all'] = 'Notifications/discardAll';
 
-$route['reward'] = 'reward/index';
-$route['redeem'] = 'redeem/index';
-$route['redeem/processRedemption'] = 'redeem/processRedemption';
+$route['reward'] = 'Reward/index';
+$route['redeem'] = 'Redeem/index';
+$route['redeem/processRedemption'] = 'Redeem/processRedemption';
 
-$route['admin'] = 'admin/index';
-$route['admin/bulkAssignTask'] = 'admin/bulkAssignTask';
-$route['admin/getEmployeeTasks'] = 'admin/getEmployeeTasks';
-$route['admin/addTask'] = 'admin/addTask';
-$route['admin/markTaskComplete'] = 'admin/markTaskComplete';
+$route['admin'] = 'Admin/index';
+$route['admin/bulkAssignTask'] = 'Admin/bulkAssignTask';
+$route['admin/getEmployeeTasks'] = 'Admin/getEmployeeTasks';
+$route['admin/addTask'] = 'Admin/addTask';
+$route['admin/markTaskComplete'] = 'Admin/markTaskComplete';
 
-$route['management'] = 'management/index';
-$route['management/getEmployeeTasks'] = 'management/getEmployeeTasks';
-$route['management/addTask'] = 'management/addTask';
-$route['management/markTaskComplete'] = 'management/markTaskComplete';
-$route['management/getRemainingPoints'] = 'management/getRemainingPoints';
+$route['management'] = 'Management/index';
+$route['management/getEmployeeTasks'] = 'Management/getEmployeeTasks';
+$route['management/addTask'] = 'Management/addTask';
+$route['management/markTaskComplete'] = 'Management/markTaskComplete';
+$route['management/getRemainingPoints'] = 'Management/getRemainingPoints';
 
-$route['send-mail'] = 'MailController/send';
